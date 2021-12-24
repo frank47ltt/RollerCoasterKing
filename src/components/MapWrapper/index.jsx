@@ -2,6 +2,8 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { Wrapper, Status } from '@googlemaps/react-wrapper';
 import { GOOGLE_MAPS_API_KEY } from '../../utils';
 import USMapJson from '../../data/us-map.json';
+import RollerCoastersJson from '../../data/rollercoasters.json';
+import RollerCoasterIcon from '../../assets/roller-coaster.png';
 
 import './style.css';
 
@@ -28,30 +30,49 @@ function MapComponent({ center, zoom }) {
       lng: e.latLng.lng(),
     });
 
-    console.log(feature.getProperty('name'));
+    const geoType = feature.getGeometry().getType();
+    if (geoType === 'Polygon' || geoType === 'MultiPolygon') {
+      console.log(feature.getProperty('name'));
+    } else {
+      // TODO: log all properties of roller coasters: id, name/title, description, ...
+    }
   };
 
   const loadGeoJson = useCallback(() => {
     if (map) {
       const loadUSMap = () => {
         map.data.addGeoJson(USMapJson);
-        const featureStyle = {
-          fillColor: '#ddd',
-          fillOpacity: 0.1,
-          strokeColor: '#222',
-          strokeOpacity: 0.5,
-          strokeWeight: 1,
-        };
-        map.data.setStyle(featureStyle);
         map.data.addListener('click', onClickFeature);
       };
 
       // TODO: load point geojson
-      // const loadRollerCoasters = ()  =>{
+      // const loadRollerCoasters = () => {
       //   map.data.addGeoJson(RollerCoastersJson);
       // }
 
+      const loadRollerCoasters = () => {
+        map.data.addGeoJson(RollerCoastersJson);
+        map.data.addListener('click', onClickFeature);
+      };
+
+      map.data.setStyle((feature) => {
+        const geoType = feature.getGeometry().getType();
+        if (geoType === 'Polygon' || geoType === 'MultiPolygon') {
+          return {
+            fillColor: '#ddd',
+            fillOpacity: 0.1,
+            strokeColor: '#222',
+            strokeOpacity: 0.5,
+            strokeWeight: 1,
+          };
+        }
+        return {
+          icon: RollerCoasterIcon, // '../../assets/roller-coaster.png';
+        };
+      });
+
       loadUSMap();
+      loadRollerCoasters();
     }
   }, [map, onClickFeature]);
 

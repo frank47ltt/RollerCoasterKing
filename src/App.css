@@ -1,4 +1,7 @@
+@import '~antd/dist/antd.css';
+
 .App {
+  position: relative;
   text-align: center;
   height: 100%;
   width: 100%;

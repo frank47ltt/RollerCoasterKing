@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.40,
+          36.00
+        ]
+      },
+      "properties": {
+        "name": "RollerCoaster01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.79,
+          35.01
+        ]
+      },
+      "properties": {
+        "name": "RollerCoaster02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.84,
+          45.23
+        ]
+      },
+      "properties": {
+        "name": "RollerCoaster03"
+      }
+    }
+  ]
+}
