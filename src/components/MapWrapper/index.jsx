@@ -33,8 +33,12 @@ function MapComponent({ center, zoom }) {
     const geoType = feature.getGeometry().getType();
     if (geoType === 'Polygon' || geoType === 'MultiPolygon') {
       console.log(feature.getProperty('name'));
-    } else {
-      // TODO: log all properties of roller coasters: id, name/title, description, ...
+    } 
+    else {
+      console.log(feature.getProperty('name'));
+      console.log(feature.getProperty('state'));
+      console.log(feature.getProperty('park'));
+      console.log(feature.getProperty('description'))
     }
   };
 
