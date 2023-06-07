@@ -1,0 +1,62 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.94,
+          35.10
+        ]
+      },
+      "properties": {
+        "id": 1,
+        "name": "Fury 325",
+        "park": "Carowinds",
+        "state": "NC",
+        "description": "Fury 325 is a steel roller coaster located at Carowinds amusement park in Charlotte, North Carolina. Manufactured by Bolliger & Mabillard, Fury 325 opened to the public on March 28, 2015. It features a 6,602-foot-long (2,012 m) track that reaches a maximum height of 325 feet (99 m), making it the fourth-tallest roller coaster in the world and the tallest overall among roller coasters that use a traditional chain lift hill. Riders experience speeds of up to 95 miles per hour (153 km/h), winding through high-speed curves and passing over and under the park's main entrance. Fury 325 has also been voted the world's best steel coaster in Amusement Today's Golden Ticket Awards for four consecutive years beginning in 2016, ending Millennium Force's six-year streak.",
+        "image": "https://dummyimage.com/600x400/000/fff",
+        "rating": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.44,
+          40.14
+        ]
+      },
+      "properties": {
+        "id": 2,
+        "name": "Kinda Ka",
+        "park": "Six Flags",
+        "state": "NJ",
+        "description": "Kingda Ka is a launched roller coaster located at Six Flags Great Adventure in Jackson, New Jersey, United States. Designed by Werner Stengel, Kingda Ka is an Accelerator.  Coaster model from Intamin that opened as the tallest and fastest roller coaster in the world on May 21, 2005. It is also the second-ever strata coaster, a full-circuit roller coaster taller than 400 feet (120 m); Top Thrill Dragster was the first and previously held both records.The train is launched by a hydraulic launch mechanism, accelerating to 128 miles per hour (206 km/h) in 3.5 seconds.[1] The train climbs the main top hat tower element at the end of the launch track, reaching a height of 456 feet (139 m), before dropping 418 feet (127 m) and completing the course in 28 seconds.[2] While still the tallest, Kingda Ka's speed record was broken by Formula Rossa at Ferrari World in 2010, however it is still the fastest coaster in North America.",
+        "image": "https://dummyimage.com/600x400/000/fff",
+        "rating": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.69,
+          41.48
+        ]
+      },
+      "properties": {
+        "id": 3,
+        "name": "Millennium Force",
+        "park": "Cedar Point",
+        "state": "OH",
+        "description": "Millennium Force is a steel roller coaster located at Cedar Point amusement park in Sandusky, Ohio. Manufactured by Intamin, it was the park's fourteenth roller coaster when it opened in 2000, dating back to the opening of Blue Streak in 1964. Upon completion, Millennium Force broke six world records and was the world's first giga coaster, a term coined by Intamin and Cedar Point to represent roller coasters that exceed 300 feet (91 m) in height and complete a full circuit. It was briefly the tallest and fastest in the world until Steel Dragon 2000 opened later the same year. The ride is also the third-longest roller coaster in North America following The Beast at Kings Island and Fury 325 at Carowinds.",
+        "image": "https://dummyimage.com/600x400/000/fff",
+        "rating": 5
+      }
+    }
+  ]
+}
